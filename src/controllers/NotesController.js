@@ -1,3 +1,4 @@
+const { getRounds } = require('bcrypt')
 const knex = require('../database/knex')
 
 class NotesController{
@@ -76,6 +77,7 @@ class NotesController{
       .whereLike('title', `%${title}%`)
       .whereIn('name', filterTags)
       .innerJoin('notes', 'notes.id', 'tags.note_id')
+      .groupBy('notes.id')
       .orderBy('notes.title')
 
         
@@ -88,7 +90,6 @@ class NotesController{
     .whereLike('title', `%${title}%`)
     .orderBy('title')
     
-    return response.json(notes)
     }
 
    
