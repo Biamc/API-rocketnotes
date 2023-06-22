@@ -1,3 +1,9 @@
+## LINUX
+- inicilamente no terminal, tem que utilizar esse comando no terminal
+1. sudo rm -rf node_modules
+- em seguida :
+1. npm install
+
 ## para criar um servidor
 
 1. terminal  
