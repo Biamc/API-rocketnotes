@@ -390,3 +390,15 @@ console.log(newArray)
 # instalação do Axios
 -npm install axios
 > é uma biblioteca que trabalha com requisiçoes http
+
+# instalação dotenv
+>biblioteca para proteger dados sensíveis
+- npm dotenv
+- 
+# instalação de pm2
+>inicializador de um servidor
+-npx pm2 init //para instalar na maquina
+- npm install pm2 //para instalar no projeto
+- 
+- substituir no arquivo packagejson, "start": "pm2-runtime start ecosystem.config.js --env production"
+- ssubstituir no arquivo ecosystem.config.js, script: "./src/serve.js",
